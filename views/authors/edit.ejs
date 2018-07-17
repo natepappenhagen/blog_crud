@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+     <!-- <link rel="stylesheet" href="/css/app.css"> -->
+ </head>
+   <body>
+    <header>
+
+     <h1>edit <%=author.name%></h1>
+       <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/authors/">Authors Index</a></li>
+
+
+        </ul>
+      </nav>
+     </header> <!-- header -->
+
+<main>
+  <h2>Author attributes</h2>
+    <form action="/authors/<%=author.id%>?_method=PUT" method="POST">
+      <input type="text" name="name" value="<%=author.name%>"><br>
+      <button type="submit">Update Author</button>
+
+    </form>
+</main>
+   </body>
+</html>

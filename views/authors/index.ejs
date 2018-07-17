@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title></title>
+     <!-- <link rel="stylesheet" href="/css/app.css"> -->
+ </head>
+   <body>
+    <header>
+
+     <h1>Welcome To The Blog</h1>
+       <nav>
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/authors/new">Create A New Author</a></li>
+
+
+        </ul>
+      </nav>
+     </header> <!-- header -->
+
+<main>
+  <h2>list of authors</h2>
+  <ul>
+    <% for (let i = 0; i < authors.length; i++) {  %>
+    <li><a href="/authors/<%=authors[i].id%>"><%=authors[i].name%></a></li>
+
+    <% } %>
+
+</ul>
+
+   </body>
+</html>
